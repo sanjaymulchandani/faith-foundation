@@ -1,0 +1,11 @@
+env/scripts/activate - Activate virtual envoirnment 
+
+python -m pip freeze > requirements.txt
+python -m pip install django-jazzmin
+
+admin:
+faithfoundation
+pass:
+Leon@2512
+
+color-pellete:https://coolors.co/palette/8ecae6-219ebc-023047-ffb703-fb8500

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="icon" href="https://scontent.fpnq2-1.fna.fbcdn.net/v/t39.30808-1/307843684_460708726086017_2128472403665626846_n.jpg?stp=c17.0.40.40a_cp0_dst-jpg_p40x40&_nc_cat=101&ccb=1-7&_nc_sid=c6021c&_nc_ohc=7jBI5dhajHsAX_JCKKD&_nc_ht=scontent.fpnq2-1.fna&oh=00_AfAQ-lRtK8zS0yrvNRlRYCpx5pmXTqv0KprpHZTR7FUAsQ&oe=638A288C">
+    <style>
+      
+      html{
+        background: lightgray;
+      }
+    </style>
+
+</head>
+<body>
+
+{% include "header.html" %}
+
+{% block content %}{% endblock content%}
+
+{% include "footer.html" %}
+</body>
+</html>
