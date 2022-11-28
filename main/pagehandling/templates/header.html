@@ -27,20 +27,20 @@
 </style>
 
 <div class="navbar-toggler">
-  <header class="d-flex flex-wrap justify-content-center py-2 color-nav navbar">
+  <header id="header-parent" class="d-flex flex-wrap justify-content-center py-2 color-nav navbar">
     
-    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+    <a href="/" id="header-logo-child" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
       <svg class="bi me-2" width="30" height="32"><use xlink:href="#bootstrap"/></svg>
       <!-- <img src="https://scontent.fpnq2-1.fna.fbcdn.net/v/t39.30808-1/307843684_460708726086017_2128472403665626846_n.jpg?stp=c17.0.40.40a_cp0_dst-jpg_p40x40&_nc_cat=101&ccb=1-7&_nc_sid=c6021c&_nc_ohc=7jBI5dhajHsAX_JCKKD&_nc_ht=scontent.fpnq2-1.fna&oh=00_AfAQ-lRtK8zS0yrvNRlRYCpx5pmXTqv0KprpHZTR7FUAsQ&oe=638A288C" class="bi me-2" width="30" height="32" alt=""> -->
       <span class="fs-4 text-light">LOGO</span>
     </a>
 
-    <ul class="nav nav-pills" style="padding: 15px;">
-      <li class="nav-item"><a href="{% url 'about' %}" class="nav-link link-light">About us</a></li>
-      <li class="nav-item"><a href="{% url 'spiritualplays' %}" class="nav-link link-light">Spiritual Plays</a></li>
-      <li class="nav-item"><a href="{% url 'spiritualcamp' %}" class="nav-link link-light">Spiritual Life Camp</a></li>
-      <li class="nav-item"><a href="{% url 'photogallery' %}" class="nav-link link-light">Photo Gallery</a></li>
-      <li class="nav-item"><a href="{% url 'register' %}" class="nav-link active" aria-current="page" style="background-color: #fb8500;">Login/Register</a></li>
+    <ul id="ul-navbar" class="nav nav-pills" style="padding: 15px;">
+      <li class="nav-item"><a id="nav-link-about" href="{% url 'about' %}" class="nav-link link-light">About us</a></li>
+      <li class="nav-item"><a id="nav-link-spiritualplays" href="{% url 'spiritualplays' %}" class="nav-link link-light">Spiritual Plays</a></li>
+      <li class="nav-item"><a id="nav-link-spiritualcamp" href="{% url 'spiritualcamp' %}" class="nav-link link-light">Spiritual Life Camp</a></li>
+      <li class="nav-item"><a id="nav-link-photogallery" href="{% url 'photogallery' %}" class="nav-link link-light">Photo Gallery</a></li>
+      <li class="nav-item"><a id="nav-link-registerbtn" href="{% url 'register' %}" class="nav-link active" aria-current="page" style="background-color: #fb8500;">Login/Register</a></li>
     </ul>
 
   </header>
