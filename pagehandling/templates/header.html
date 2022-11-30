@@ -66,9 +66,10 @@
   <a href="{% url 'home' %}" class="active">LOGO</a>
   <a id="nav-link-about" href="{% url 'about' %}" class="nav-link link-light" style="margin-left: 499.5px;" >About us</a>
   <a id="nav-link-spiritualplays" href="{% url 'spiritualplays' %}" class="nav-link link-light">Spiritual Plays</a>
+  
   <a id="nav-link-spiritualcamp" href="{% url 'spiritualcamp' %}" class="nav-link link-light">Spiritual Life Camp</a>
   <a id="nav-link-photogallery" href="{% url 'photogallery' %}" class="nav-link link-light">Photo Gallery</a>
-  <a href="#contact">Contact</a>
+  <a href="{% url 'contact' %}">Contact</a>
   <a id="nav-link-registerbtn" href="{% url 'register' %}" class="nav-link active" aria-current="page" style="background-color: #fb8500;">Login/Register</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>

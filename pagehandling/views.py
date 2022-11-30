@@ -11,3 +11,5 @@ def photogallery(request):
     return render(request, 'photogallery.html')
 def about(request):
     return render(request, 'about.html')
+def about(request):
+    return render(request, 'contact.html')
