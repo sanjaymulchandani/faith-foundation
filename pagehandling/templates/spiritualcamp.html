@@ -1,86 +1,110 @@
 {% extends 'base.html' %}
 {% block title %}Spiritual Life Camp{% endblock %}
 {% block content %}
+
+<!DOCTYPE html>
+<html>
+<head>
 <style>
-    .form-div{
-        border: 1px solid transparent;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-        border-radius: 10px;
-        height: 100%;
-        margin-top: 50px;
-        padding: 20px;
-    }
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 </style>
-<h1>Spiritual Life Center registration form</h1>
-<!-- Spiritual camp slider -->
+</head>
+<body>
 
-<!-- Form starts here -->
-<div class="container form-div">
-<form class="row g-4">
-    <div class="col-md-6">
-      <!-- <label for="inputEmail4" class="form-label">Email</label> -->
-      <input type="text" class="form-control" id="inputname" placeholder="Full Name" autocomplete="additional-name">
-    </div>
-    <div class="col-md-6">
-        <!-- <label for="inputEmail4" class="form-label">Email</label> -->
-        <input type="email" class="form-control" id="inputemail" placeholder="Email" autocomplete="email">
-      </div>
-    <div class="col-md-6">
-      <!-- <label for="inputPassword4" class="form-label">Password</label> -->
-      <input type="password" class="form-control" id="inputpassword" placeholder="Password">
-    </div>
-    <div class="col-6">
-        <!-- <label for="inputAddress" class="form-label">Address</label> -->
-        <input type="text" class="form-control" id="inputmobile" placeholder="Mobile number">
-    </div>
-    <div class="col-6">
-        <!-- <label for="inputAddress" class="form-label">Address</label> -->
-        <input type="text" class="form-control" id="inputmobile2" placeholder="Alternate mobile number">
-    </div>
-    <div class="col-6">
-        <!-- <label for="inputAddress" class="form-label">Address</label> -->
-        <input type="text" class="form-control" id="inputbirth" placeholder="Date of birth" onfocus="(this.type='date')">
-    </div>
-    <div class="col-6">
-      <!-- <label for="inputAddress" class="form-label">Address</label> -->
-      <input type="text" class="form-control" id="inputAddress" placeholder="Address">
-    </div>
-    <div class="col-6">
-      <!-- <label for="inputAddress2" class="form-label">Address 2</label> -->
-      <input type="text" class="form-control" id="inputAddress2" placeholder="Landmark">
-    </div>
-    <div class="col-md-6">
-      <!-- <label for="inputCity" class="form-label">City</label> -->
-      <input type="text" class="form-control" id="inputCity" placeholder="City">
-    </div>
-    <div class="col-md-4">
-      <!-- <label for="inputState" class="form-label">State</label> -->
-      <select id="inputState" class="form-select">
-        <option selected>Select State</option>
-        <option>Maharashtra</option>
-      </select>
-    </div>
-    <div class="col-md-2">
-      <!-- <label for="inputZip" class="form-label">Zip</label> -->
-      <input type="text" class="form-control" id="inputZip" placeholder="Postal Code">
-    </div>
-    <div class="col-12">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck">
-        <label class="form-check-label" for="gridCheck">
-        Terms and conditions*
-        </label>
-      </div>
-    </div>
+<h2>Spiritual Life Center - Nasrapur</h2>
+<hr class="featurette-divider">
 
-    <div class="col-5">
-        <button type="submit" class="btn" style="background-color: #8ECAE6; color: white;">Add Family Members</button>
-    </div>
-
-    <div class="col-12">
-      <button type="submit" class="btn" style="background-color: #fb8500; color: white;">Submit</button>
-    </div>
-  </form>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_5terre.jpg">
+      <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
 </div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_forest.jpg">
+      <img src="img_forest.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+  <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+</div>
+
+</body>
+</html>
+
 
 {% endblock content %}

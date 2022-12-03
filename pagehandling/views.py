@@ -7,9 +7,11 @@ def spiritualcamp(request):
     return render(request, 'spiritualcamp.html')
 def spiritualplays(request):
     return render(request, 'spiritualplays.html')
-def photogallery(request):
-    return render(request, 'photogallery.html')
 def about(request):
     return render(request, 'about.html')
 def about(request):
     return render(request, 'contact.html')
+def spiritualcamp_register(request):
+    return render(request, 'spiritual_life_camp_register.html')
+def spiritualplays_register(request):
+    return render(request, 'spiritual_plays_register.html')
