@@ -35,17 +35,18 @@
           <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Spiritual Plays</a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="{% url 'spiritualplays' %}">About Spiritual Plays</a></li>
-            <li><a class="dropdown-item" href="#">Book seats</a></li>
+            <li><a class="dropdown-item" href="{% url 'spiritual-plays-register' %}">Book seats</a></li>
           </ul>
         </li>
         
-        <!-- <li class="nav-item">
-          <a class="nav-link active" href="{% url 'about' %}">About</a>
-        </li> -->
-
         <li class="nav-item">
           <a class="nav-link active" href="{% url 'contact' %}">Contact</a>
         </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" href="{% url 'about' %}">About</a>
+        </li>
+
       </ul>
         <a href="{% url 'register' %}" id="login-register-navbar">Login/Register</a>
     </div>

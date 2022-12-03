@@ -1,5 +1,40 @@
 {% extends "base.html" %}
-{% block title %}Photo Gallery{% endblock %}
+{% block title %}Spiritual Play Booking{% endblock %}
 {% block content %}
-<h1>Photos</h1>
+<style>
+    #id_full_name,#id_mobile_number,#id_date_of_birth,#id_city{
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        float: right;
+        padding: 5px;
+    }
+    #seat_booking_div{
+        padding: 5px;
+        border: 1px solid black;
+        height: 100%;
+        width: 350px;
+
+    }
+</style>
+
+<h1>Book your seats for Joseph(Musical Play)</h1>
+<hr class="featurette-divider">
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <div class="alert alert-success container" style="height: 55px;" role="alert">
+        <p {% if message.tags %} class=" {{ message.tags }} " {% endif %}> {{ message }} </p>
+    </div>
+    {% endfor %}
+</ul>
+{% endif %}
+
+
+<div class="container" id="seat_booking_div">
+<form action = "" method = "post">
+	{% csrf_token %}
+	{{form.as_p }}
+	<input  class="btn btn-primary" type="submit" value=Submit>
+</form>
+</div>
 {% endblock content %}
